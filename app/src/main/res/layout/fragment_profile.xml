@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".fragment.ProfileFragment">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/profile"
+                    android:orientation="vertical" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center|bottom"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="William T. Giltner"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Android Developer"
+                        android:textColor="#E6E2E2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Account Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/card"
+                app:layout_constraintTop_toBottomOf="@id/card" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAccount" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="Email "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/v1"
+                app:layout_constraintTop_toBottomOf="@id/v1" />
+
+            <TextView
+                android:id="@+id/edEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="miziad2000@gmail.com"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v1" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="Age "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/tvEmail"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+            <TextView
+                android:id="@+id/edAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="19 years"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="Phone "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/tvAge"
+                app:layout_constraintTop_toBottomOf="@id/tvAge" />
+
+            <TextView
+                android:id="@+id/edPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="0599838964"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAge" />
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="From "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/tvPhone"
+                app:layout_constraintTop_toBottomOf="@id/tvPhone" />
+
+            <TextView
+                android:id="@+id/edFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="Gaza City"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPhone" />
+
+            <TextView
+                android:id="@+id/tvLives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="Lives "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/tvFrom"
+                app:layout_constraintTop_toBottomOf="@id/tvFrom" />
+
+            <TextView
+                android:id="@+id/edLives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:enabled="false"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="Istanbul"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFrom" />
+
+            <TextView
+                android:id="@+id/tvRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="Relation "
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/tvLives"
+                app:layout_constraintTop_toBottomOf="@id/tvLives" />
+
+            <TextView
+                android:id="@+id/edRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="Single"
+                android:textColor="#919191"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLives" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="5dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

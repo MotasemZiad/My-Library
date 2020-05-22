@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:id="@+id/btnGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:text="General"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="Notification"
+        app:layout_constraintTop_toBottomOf="@id/btnLanguages"/>
+
+    <Button
+        android:id="@+id/btnLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="Language"
+        app:layout_constraintTop_toBottomOf="@id/btnGeneral"/>
+
+    <Button
+        android:id="@+id/btnPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="Privacy and politics"
+        app:layout_constraintTop_toBottomOf="@id/btnLanguages"/>
+
+    <Button
+        android:id="@+id/btnUserAgreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="User agreement"
+        app:layout_constraintTop_toBottomOf="@id/btnPrivacy"/>
+
+    <Button
+        android:id="@+id/btnTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="Terms and conditions"
+        app:layout_constraintTop_toBottomOf="@id/btnUserAgreement"/>
+
+    <Button
+        android:id="@+id/btnFAQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_selector"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:text="FAQ"
+        app:layout_constraintTop_toBottomOf="@id/btnTerms"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

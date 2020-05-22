@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id="@+id/tvApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="MyLibrary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvVersion"
+        app:layout_constraintStart_toStartOf="@id/tvVersion" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Version 2.19.244"
+        android:textColor="#565656"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/splash"
+        app:layout_constraintStart_toStartOf="@id/splash" />
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="172dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/library_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/about_app"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash" />
+
+    <TextView
+        android:id="@+id/tvBuild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="© 2017-2019 all copyrights reserved"
+        android:textColor="#565656"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAbout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
